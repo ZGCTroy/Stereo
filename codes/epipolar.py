@@ -24,8 +24,8 @@ def draw_epipolar_lines(origin_stereo_camera, rectified_stereo_camera):
     for i in range(1, 14):
         imgL = cv2.imread(os.path.join('../images/left', 'left' + str(i).zfill(2) + '.jpg'))
         imgR = cv2.imread(os.path.join('../images/right', 'right' + str(i).zfill(2) + '.jpg'))
-        rectified_imgL = cv2.imread(os.path.join('../images/rectified_left', 'left' + str(i).zfill(2) + '.jpg'))
-        rectified_imgR = cv2.imread(os.path.join('../images/rectified_right', 'right' + str(i).zfill(2) + '.jpg'))
+        rectified_imgL = cv2.imread(os.path.join('../images/rectified_left', 'rectified_left' + str(i).zfill(2) + '.jpg'))
+        rectified_imgR = cv2.imread(os.path.join('../images/rectified_right', 'rectified_right' + str(i).zfill(2) + '.jpg'))
 
         colors = []
         for j in range(len(origin_stereo_camera.left_camera.image_points[i-1])):
@@ -68,17 +68,33 @@ def draw_epipolar_lines(origin_stereo_camera, rectified_stereo_camera):
         )
 
 
-        plt.subplot(2,2,1)
-        plt.imshow(epipolar_imgL)
-        plt.title(i)
-        plt.subplot(2, 2, 2)
-        plt.imshow(epipolar_imgR)
-        plt.subplot(2, 2, 3)
-        plt.imshow(epipolar_rectified_imgL)
-        plt.title(i)
-        plt.subplot(2, 2, 4)
-        plt.imshow(epipolar_rectified_imgR)
-        plt.show()
+        # plt.subplot(2,2,1)
+        # plt.imshow(epipolar_imgL)
+        # plt.title(i)
+        # plt.subplot(2, 2, 2)
+        # plt.imshow(epipolar_imgR)
+        # plt.subplot(2, 2, 3)
+        # plt.imshow(epipolar_rectified_imgL)
+        # plt.title(i)
+        # plt.subplot(2, 2, 4)
+        # plt.imshow(epipolar_rectified_imgR)
+        # plt.show()
+
+        cv2.imwrite(
+            os.path.join('../images/epipolar_left/', 'epipolar_left' + str(i).zfill(2) + '.jpg'),
+            epipolar_imgL)
+
+        cv2.imwrite(
+            os.path.join('../images/epipolar_right/', 'epipolar_right' + str(i).zfill(2) + '.jpg'),
+            epipolar_imgR)
+
+        cv2.imwrite(
+            os.path.join('../images/epipolar_rectified_left/', 'epipolar_rectified_left' + str(i).zfill(2) + '.jpg' ),
+                    epipolar_rectified_imgL)
+
+        cv2.imwrite(
+            os.path.join('../images/epipolar_rectified_right/', 'epipolar_rectified_right' + str(i).zfill(2) + '.jpg'),
+            epipolar_rectified_imgR)
 
 if __name__ == '__main__':
     # create a stereo camera system

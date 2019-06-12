@@ -18,8 +18,6 @@ if __name__ == '__main__':
     # calculate the map function of the undistortion and rectify
     stereo_camera.calculate_undistort_and_rectify_map()
 
-    print(stereo_camera.left_camera.distortion_coefficients)
-
     # Rectify
     for i in range(len(stereo_camera.left_camera.image_names)):
         left_image = cv2.imread(stereo_camera.left_camera.image_paths[i])
@@ -28,8 +26,8 @@ if __name__ == '__main__':
         rectified_left_image = stereo_camera.undistort_and_rectify_image(image=left_image, is_left_image=True)
         rectified_right_image = stereo_camera.undistort_and_rectify_image(image=right_image, is_left_image=False)
 
-        cv2.imwrite(os.path.join('../images/rectified_left/', stereo_camera.left_camera.image_names[i]), rectified_left_image)
-        cv2.imwrite(os.path.join('../images/rectified_right/', stereo_camera.right_camera.image_names[i]),rectified_right_image)
+        cv2.imwrite(os.path.join('../images/rectified_left/', 'rectified_' +stereo_camera.left_camera.image_names[i]), rectified_left_image)
+        cv2.imwrite(os.path.join('../images/rectified_right/', 'rectified_'+stereo_camera.right_camera.image_names[i]),rectified_right_image)
 
         plt.subplot(2, 2, 1)
         plt.imshow(left_image)
@@ -45,4 +43,8 @@ if __name__ == '__main__':
         plt.title('rectified right image')
         #plt.show()
 
-    print(stereo_camera.P2[0][3]/stereo_camera.P2[0][0])
+    print(stereo_camera.P1)
+
+    print(stereo_camera.P2)
+
+    print(stereo_camera.T)
