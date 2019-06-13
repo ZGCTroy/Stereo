@@ -1,15 +1,15 @@
 import os
 import numpy as np
-from single_camera_system import single_camera_system
-from stereo_camera_system import stereo_camera_system
+from Camera import Camera
+from StereoCamera import StereoCamera
 import cv2
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
     # create a stereo camera system
-    stereo_camera = stereo_camera_system(
-        left_camera=single_camera_system(image_root_dir='../images/left'),
-        right_camera=single_camera_system(image_root_dir='../images/right'),
+    stereo_camera =StereoCamera(
+        left_camera=Camera(image_root_dir='../images/left'),
+        right_camera=Camera(image_root_dir='../images/right'),
     )
 
     # stereo calibrate
@@ -43,8 +43,23 @@ if __name__ == '__main__':
         plt.title('rectified right image')
         #plt.show()
 
-    print(stereo_camera.P1)
+    print('P1 = ')
+    print(stereo_camera.P1,'\n')
 
-    print(stereo_camera.P2)
+    print('P2 = ')
+    print(stereo_camera.P2,'\n')
 
-    print(stereo_camera.T)
+    print('Q')
+    print(stereo_camera.Q,'\n')
+
+    print('f = ')
+    print(stereo_camera.P2[0][0],'\n')
+
+    print('b * f = ')
+    print(stereo_camera.P2[0][3],'\n')
+    print('b = ')
+    print(stereo_camera.P2[0][3]/stereo_camera.P2[0][0])
+
+    print((stereo_camera.left_camera.camera_matrix[0][0]+stereo_camera.right_camera.camera_matrix[0][0])/2)
+    print((stereo_camera.left_camera.camera_matrix[1][1] + stereo_camera.right_camera.camera_matrix[1][1]) / 2)
+    print((stereo_camera.left_camera.camera_matrix[1][2] + stereo_camera.right_camera.camera_matrix[1][2]) / 2)

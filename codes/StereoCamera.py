@@ -3,7 +3,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import os
 
-from Camera import Camer
+from Camera import Camera
 
 class StereoCamera():
     def __init__(self,
@@ -29,6 +29,7 @@ class StereoCamera():
         self.R1 = None
         self.R2 = None
         self.Q = None
+        self.calibrate_error = 0
 
 
     def calibrate(self):
@@ -36,7 +37,7 @@ class StereoCamera():
         self.left_camera.calibrate()
         self.right_camera.calibrate()
         
-        retval, self.left_camera.camera_matrix, self.left_camera.distortion_coefficients, \
+        self.calibrate_error, self.left_camera.camera_matrix, self.left_camera.distortion_coefficients, \
         self.right_camera.camera_matrix, self.right_camera.distortion_coefficients,\
         self.R, self.T, self.E, self.F = cv2.stereoCalibrate(
             objectPoints=self.left_camera.object_points,

@@ -31,31 +31,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes/Undistort.py">
+        <entry file="file://$PROJECT_DIR$/codes/rectify.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes/StereoCamera.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/codes/stereoCalibrate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+            <state>
+              <caret selection-end-line="5" selection-end-column="31" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -63,14 +42,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes/Camera.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codes/OpenCV_SGBM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            <state relative-caret-position="490">
+              <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#3127#3793#0" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,7 +97,6 @@
         <option value="$PROJECT_DIR$/codes/single_camera_system.py" />
         <option value="$PROJECT_DIR$/codes/epipolar.py" />
         <option value="$PROJECT_DIR$/codes/Rectify.py" />
-        <option value="$PROJECT_DIR$/codes/OpenCV_SGBM.py" />
         <option value="$PROJECT_DIR$/codes/single_camera_calibrate.py" />
         <option value="$PROJECT_DIR$/codes/stereo_camera_system.py" />
         <option value="$PROJECT_DIR$/codes/camera.py" />
@@ -127,6 +104,9 @@
         <option value="$PROJECT_DIR$/codes/Camera.py" />
         <option value="$PROJECT_DIR$/codes/Undistort.py" />
         <option value="$PROJECT_DIR$/codes/StereoCamera.py" />
+        <option value="$PROJECT_DIR$/codes/stereoCalibrate.py" />
+        <option value="$PROJECT_DIR$/codes/rectify.py" />
+        <option value="$PROJECT_DIR$/codes/OpenCV_SGBM.py" />
       </list>
     </option>
   </component>
@@ -209,7 +189,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Undistort">
+  <component name="RunManager" selected="Python.OpenCV_SGBM">
     <configuration name="summer_python" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="summer_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -257,7 +237,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/Rectify.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/rectify.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -276,7 +256,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/Undistort.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/undistort.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -326,25 +306,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="epipolar" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="summer_python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codes" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/epipolar.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="single_camera_calibration" type="PythonConfigurationType" factoryName="Python">
       <module name="summer_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -364,22 +325,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="stereoCalibrate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="summer_python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/stereoCalibrate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.summer_python" />
       <item itemvalue="Python.single_camera_calibration" />
       <item itemvalue="Python.Rectify" />
       <item itemvalue="Python.OpenCV_SGBM" />
-      <item itemvalue="Python.epipolar" />
       <item itemvalue="Python.calibrate" />
       <item itemvalue="Python.Undistort" />
+      <item itemvalue="Python.stereoCalibrate" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Undistort" />
-        <item itemvalue="Python.calibrate" />
         <item itemvalue="Python.OpenCV_SGBM" />
         <item itemvalue="Python.Rectify" />
-        <item itemvalue="Python.epipolar" />
+        <item itemvalue="Python.stereoCalibrate" />
+        <item itemvalue="Python.Undistort" />
+        <item itemvalue="Python.calibrate" />
       </list>
     </recent_temporary>
   </component>
@@ -399,12 +379,12 @@
       <workItem from="1559449095001" duration="2709000" />
       <workItem from="1559455951093" duration="8543000" />
       <workItem from="1559529000494" duration="25682000" />
-      <workItem from="1560162522205" duration="42358000" />
+      <workItem from="1560162522205" duration="46086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97748000" />
+    <option name="totallyTimeSpent" value="101476000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -416,10 +396,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15934066" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10365369" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" sideWeight="0.49960285" weight="0.329927" />
@@ -435,12 +415,12 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007943" side_tool="true" weight="0.27445257" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.22040816" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.25510204" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.47664234" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="865" y="195" width="830" height="1050" id="SciView" order="3" sideWeight="0.98029196" visible="true" weight="0.32234433" />
+      <window_info active="true" anchor="right" x="865" y="195" width="830" height="1050" id="SciView" order="3" sideWeight="0.98029196" visible="true" weight="0.4511517" />
       <window_info anchor="right" x="0" y="0" width="590" height="1240" id="Documentation" order="4" sideWeight="0.024107143" side_tool="true" weight="0.20969023" />
       <window_info anchor="right" id="Database" order="5" sideWeight="0.49809524" weight="0.32962668" />
     </layout>
@@ -619,16 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes/Rectify.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="45" column="27" lean-forward="true" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_import_hook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -671,16 +641,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes/OpenCV_SGBM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding>
-            <element signature="e#1#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codes/Camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -692,7 +652,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes/Undistort.py">
+    <entry file="file://$PROJECT_DIR$/codes/stereoCalibrate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes/undistort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
@@ -701,18 +671,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/codes/StereoCamera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="-154">
+          <caret line="39" column="28" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes/stereoCalibrate.py">
+    <entry file="file://$PROJECT_DIR$/codes/rectify.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="33" lean-forward="true" selection-start-line="35" selection-start-column="33" selection-end-line="35" selection-end-column="33" />
+        <state>
+          <caret selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes/OpenCV_SGBM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
