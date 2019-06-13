@@ -1,13 +1,13 @@
 import os
 import numpy as np
-from single_camera_system import single_camera_system
-from stereo_camera_system import stereo_camera_system
+from Camera import Camera
+from StereoCamera import StereoCamera
 import cv2
 import matplotlib.pyplot as plt
 
 
 if __name__ == '__main__':
-    camera = single_camera_system(image_root_dir='../images/right')
+    camera = Camera(image_root_dir='../images/right')
 
     camera.calibrate()
 
@@ -25,5 +25,5 @@ if __name__ == '__main__':
         plt.title('undistorted image')
         plt.show()
 
-        # cv2.imwrite('./image_before_undistortion.jpg',img)
-        # cv2.imwrite('./image_after_undistortion.jpg',undistorted_img)
+        cv2.imwrite('./image_before_undistortion.jpg',img)
+        cv2.imwrite('./image_after_undistortion.jpg',undistorted_img)

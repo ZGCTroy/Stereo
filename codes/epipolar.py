@@ -109,12 +109,12 @@ if __name__ == '__main__':
     )
 
     # stereo calibrate
-    origin_stereo_camera.stereo_calibrate()
-    rectified_stereo_camera.stereo_calibrate()
+    origin_stereo_camera.calibrate()
+    rectified_stereo_camera.calibrate()
 
     # calculate the map function of the undistortion and rectify
-    origin_stereo_camera.calculate_undistort_and_rectify_map()
-    rectified_stereo_camera.calculate_undistort_and_rectify_map()
+    origin_stereo_camera.get_rectify_map()
+    rectified_stereo_camera.get_rectify_map()
 
     draw_epipolar_lines(
         origin_stereo_camera=origin_stereo_camera,

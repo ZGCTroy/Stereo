@@ -13,18 +13,18 @@ if __name__ == '__main__':
     )
 
     # stereo calibrate
-    stereo_camera.stereo_calibrate()
+    stereo_camera.calibrate()
 
     # calculate the map function of the undistortion and rectify
-    stereo_camera.calculate_undistort_and_rectify_map()
+    stereo_camera.get_rectify_map()
 
     # Rectify
     for i in range(len(stereo_camera.left_camera.image_names)):
         left_image = cv2.imread(stereo_camera.left_camera.image_paths[i])
         right_image = cv2.imread(stereo_camera.right_camera.image_paths[i])
 
-        rectified_left_image = stereo_camera.undistort_and_rectify_image(image=left_image, is_left_image=True)
-        rectified_right_image = stereo_camera.undistort_and_rectify_image(image=right_image, is_left_image=False)
+        rectified_left_image = stereo_camera.rectify(image=left_image, is_left_image=True)
+        rectified_right_image = stereo_camera.rectify(image=right_image, is_left_image=False)
 
         cv2.imwrite(os.path.join('../images/rectified_left/', 'rectified_' +stereo_camera.left_camera.image_names[i]), rectified_left_image)
         cv2.imwrite(os.path.join('../images/rectified_right/', 'rectified_'+stereo_camera.right_camera.image_names[i]),rectified_right_image)

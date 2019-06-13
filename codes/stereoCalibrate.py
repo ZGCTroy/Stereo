@@ -13,10 +13,10 @@ if __name__ == '__main__':
     )
 
     # stereo calibrate
-    stereo_camera.stereo_calibrate()
+    stereo_camera.calibrate()
 
     # calculate the map function of the undistortion and rectify
-    stereo_camera.calculate_undistort_and_rectify_map()
+    stereo_camera.get_rectify_map()
 
     print('left camera matrix')
     print(stereo_camera.left_camera.camera_matrix,'\n')

@@ -106,9 +106,6 @@ class Camera():
             newCameraMatrix=new_camera_matrix
         )
 
-        x, y, w, h = roi
-        undistorted_image = undistorted_image[y:y + h, x:x + w]
-
         return undistorted_image
 
 
