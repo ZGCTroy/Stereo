@@ -379,12 +379,12 @@
       <workItem from="1559449095001" duration="2709000" />
       <workItem from="1559455951093" duration="8543000" />
       <workItem from="1559529000494" duration="25682000" />
-      <workItem from="1560162522205" duration="46086000" />
+      <workItem from="1560162522205" duration="46240000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101476000" />
+    <option name="totallyTimeSpent" value="101630000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -397,9 +397,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10365369" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10365369" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" sideWeight="0.49960285" weight="0.329927" />
@@ -420,7 +419,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" x="865" y="195" width="830" height="1050" id="SciView" order="3" sideWeight="0.98029196" visible="true" weight="0.4511517" />
+      <window_info anchor="right" x="865" y="195" width="830" height="1050" id="SciView" order="3" sideWeight="0.98029196" visible="true" weight="0.4511517" />
       <window_info anchor="right" x="0" y="0" width="590" height="1240" id="Documentation" order="4" sideWeight="0.024107143" side_tool="true" weight="0.20969023" />
       <window_info anchor="right" id="Database" order="5" sideWeight="0.49809524" weight="0.32962668" />
     </layout>

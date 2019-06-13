@@ -42,10 +42,10 @@ if __name__ == '__main__':
         plt.imshow(disparity, 'gray')
         plt.show()
 
-        cv2.imwrite(
-            os.path.join('../images/disparity','disparity' + str(i).zfill(2) + '.jpg'),
-            disparity
-        )
+        # cv2.imwrite(
+        #     os.path.join('../images/disparity','disparity' + str(i).zfill(2) + '.jpg'),
+        #     disparity
+        # )
 
 
 
