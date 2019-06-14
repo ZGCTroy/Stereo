@@ -22,8 +22,13 @@ The reporsity is the implement code of the Stereo Project.
 
 * images
     * disparity
+
         The disparity map of each image
+
     * epipolar_rectified_left
+
         The rectified left images with epipolar lines
+
     * epipolar_rectified_right
+
         The rectified right images with epipolar lines
