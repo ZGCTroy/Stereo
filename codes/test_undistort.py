@@ -11,7 +11,7 @@ if __name__ == '__main__':
 
     camera.calibrate()
 
-    for i in range(1, 14):
+    for i in range(1, 3):
         img = cv2.imread(os.path.join('../images/left', 'left' + str(i).zfill(2) + '.jpg'))
 
         undistorted_img = camera.undistort(image=img)
