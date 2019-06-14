@@ -1,6 +1,5 @@
 import cv2
 import numpy as np
-from matplotlib import pyplot as plt
 import os
 
 class Camera():
@@ -13,19 +12,20 @@ class Camera():
                  image_size = (640,480),
                  image_root_dir = None
                  ):
-        self.pattern_size = pattern_size
-        self.object_points = []
-        self.image_points = []
-        self.image_size = image_size
-        self.camera_matrix = camera_matrix
-        self.distortion_coefficients = distortion_coefficients
-        self.rotation_matrix= rotation_matrix
-        self.translation_vector = translation_vector
-        self.image_root_dir = image_root_dir
-        self.image_paths = []
-        self.image_names = []
-        self.error = 0
+        self.pattern_size = pattern_size                               # pattern size
+        self.object_points = []                                        # object points
+        self.image_points = []                                         # image points
+        self.image_size = image_size                                   # image size
+        self.camera_matrix = camera_matrix                             # the intrinsic matrix of the camera
+        self.distortion_coefficients = distortion_coefficients         # the distortion coefficients [k1,k2,p1,p2,k3]
+        self.rotation_matrix= rotation_matrix                          # rotation matrix R
+        self.translation_vector = translation_vector                   # translation vectort t
+        self.image_root_dir = image_root_dir                           # the root dir of images used for calibration
+        self.image_paths = []                                          # the path of images used for calibration
+        self.image_names = []                                          # the name of images used for calibration
+        self.error = 0                                                 # the calibration error
 
+    # calibrate the camera using the images in self.image_root_dir
     def calibrate(self):
         self.object_points = []
         self.image_points = []
@@ -86,6 +86,7 @@ class Camera():
 
         return self.camera_matrix, self.distortion_coefficients, self.rotation_matrix, self.translation_vector
 
+    # given a image, undistort the image and return the image before distortion
     def undistort(self, image):
         h = image.shape[0]
         w = image.shape[1]

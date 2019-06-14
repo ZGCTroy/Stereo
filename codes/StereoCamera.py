@@ -15,23 +15,23 @@ class StereoCamera():
                  E = None,
                  F = None
                  ):
-        self.left_camera = left_camera
-        self.right_camera = right_camera
-        self.image_size = image_size
-        self.R = R
-        self.T = T
-        self.E = E
-        self.F = F
-        self.left_maps = None
-        self.right_maps = None
-        self.P1 = None
-        self.P2 = None
-        self.R1 = None
-        self.R2 = None
-        self.Q = None
-        self.calibrate_error = 0
+        self.left_camera = left_camera                      # Camera Class, the left camera
+        self.right_camera = right_camera                    # Camera Class, the right camera
+        self.image_size = image_size                        # image size
+        self.R = R                                          # rotation matrix from the left to the right camera coordinate
+        self.T = T                                          # translation vectort from the left to the right camera coordinate
+        self.E = E                                          # essential matrix
+        self.F = F                                          # fundamental matrix
+        self.left_maps = None                               # the rectify mapping for the left camera
+        self.right_maps = None                              # the rectify mapping for the right camera
+        self.P1 = None                                      # the new projection matrix for the left camera
+        self.P2 = None                                      # the new projection matrix for the right camera
+        self.R1 = None                                      # the left transformation matrix from the old to the new
+        self.R2 = None                                      # the right transformation matrix from the old to the new
+        self.Q = None                                       # the disparity-to-depth transformation matrix
+        self.calibrate_error = 0                            # the error of stereo calibration
 
-
+    # calibrate the stereo camera system
     def calibrate(self):
 
         self.left_camera.calibrate()
@@ -50,6 +50,7 @@ class StereoCamera():
             imageSize=self.image_size,
         )
 
+    # calculate the undistort and rectify map
     def get_rectify_map(self):
         self.R1, self.R2, self.P1, self.P2, self.Q, roi1, roi2 = cv2.stereoRectify(
             cameraMatrix1=self.left_camera.camera_matrix,
@@ -79,7 +80,7 @@ class StereoCamera():
             m1type=cv2.CV_16SC2
         )
 
-
+    # use the map calculated by get_rectify_map() to rectify a image
     def rectify(self, image, is_left_image):
         if is_left_image:
             maps = self.left_maps
@@ -94,21 +95,5 @@ class StereoCamera():
         )
 
         return rectified_image
-
-
-
-
-if __name__ == '__main__':
-    # create a stereo camera system
-    stereo_camera = StereoCamera(
-        left_camera=Camera(image_root_dir='../images/left'),
-        right_camera=Camera(image_root_dir='../images/right'),
-    )
-
-    # stereo calibrate
-    stereo_camera.calibrate()
-
-    # calculate the map function of the undistortion and rectify
-    stereo_camera.get_rectify_map()
 
 

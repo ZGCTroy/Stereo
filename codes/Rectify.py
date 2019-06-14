@@ -57,9 +57,6 @@ if __name__ == '__main__':
 
     print('b * f = ')
     print(stereo_camera.P2[0][3],'\n')
+
     print('b = ')
     print(stereo_camera.P2[0][3]/stereo_camera.P2[0][0])
-
-    print((stereo_camera.left_camera.camera_matrix[0][0]+stereo_camera.right_camera.camera_matrix[0][0])/2)
-    print((stereo_camera.left_camera.camera_matrix[1][1] + stereo_camera.right_camera.camera_matrix[1][1]) / 2)
-    print((stereo_camera.left_camera.camera_matrix[1][2] + stereo_camera.right_camera.camera_matrix[1][2]) / 2)
