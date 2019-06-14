@@ -22,7 +22,7 @@ if __name__ == '__main__':
     )
 
 
-    for i in range(2, 3):
+    for i in range(6, 7):
         imgL = cv2.imread(os.path.join('../images/rectified_left', 'rectified_left' + str(i).zfill(2) + '.jpg'), 0)
         imgR = cv2.imread(os.path.join('../images/rectified_right', 'rectified_right' + str(i).zfill(2) + '.jpg'), 0)
 

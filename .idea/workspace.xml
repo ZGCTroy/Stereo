@@ -207,7 +207,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Rectify">
+  <component name="RunManager" selected="Python.test_SGBM">
     <configuration name="summer_python" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="summer_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -327,7 +327,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_calibrate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_SGBM" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="summer_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -337,7 +337,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/test_calibrate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/test_SGBM.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -371,16 +371,16 @@
       <item itemvalue="Python.Rectify" />
       <item itemvalue="Python.Undistort" />
       <item itemvalue="Python.epipolar" />
-      <item itemvalue="Python.test_calibrate" />
       <item itemvalue="Python.test_stereoCalibrate" />
+      <item itemvalue="Python.test_SGBM" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_SGBM" />
+        <item itemvalue="Python.epipolar" />
         <item itemvalue="Python.Rectify" />
         <item itemvalue="Python.test_stereoCalibrate" />
         <item itemvalue="Python.Undistort" />
-        <item itemvalue="Python.test_calibrate" />
-        <item itemvalue="Python.epipolar" />
       </list>
     </recent_temporary>
   </component>
