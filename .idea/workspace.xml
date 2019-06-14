@@ -30,7 +30,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codes/test_rectify.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
@@ -42,16 +42,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/codes/StereoCamera.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/codes/test_SGBM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+            <state relative-caret-position="315">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
-                <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#831#1628#0" />
-                <element signature="e#1669#2705#0" />
-                <element signature="e#2761#3061#0" />
+                <element signature="e#0#9#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -119,6 +116,7 @@
         <option value="$PROJECT_DIR$/codes/test_calibrate.py" />
         <option value="$PROJECT_DIR$/codes/test_undistort.py" />
         <option value="$PROJECT_DIR$/codes/test_rectify.py" />
+        <option value="$PROJECT_DIR$/codes/test_SGBM.py" />
       </list>
     </option>
   </component>
@@ -401,12 +399,12 @@
       <workItem from="1559455951093" duration="8543000" />
       <workItem from="1559529000494" duration="25682000" />
       <workItem from="1560162522205" duration="46779000" />
-      <workItem from="1560473454008" duration="4344000" />
+      <workItem from="1560473454008" duration="4441000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106513000" />
+    <option name="totallyTimeSpent" value="106610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -600,16 +598,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/single_camera_calibrator.py" />
     <entry file="file://$PROJECT_DIR$/stereo_calibration_and_rectify.py" />
-    <entry file="file://$PROJECT_DIR$/codes/test_SGBM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="23" lean-forward="true" selection-start-line="46" selection-start-column="23" selection-end-line="46" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codes/Camera.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -618,16 +606,6 @@
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#935#3085#0" />
             <element signature="e#3127#3703#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/codes/test_epipolar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -706,10 +684,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/codes/test_epipolar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/codes/test_rectify.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="52" lean-forward="true" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes/test_SGBM.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

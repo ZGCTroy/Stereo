@@ -19,3 +19,11 @@ The reporsity is the implement code of the Stereo Project.
 * env
 
     the python Virtualenv, which can be loaded by most IDEs such as Pycharm, Eclipse
+
+* images
+    * disparity
+        The disparity map of each image
+    * epipolar_rectified_left
+        The rectified left images with epipolar lines
+    * epipolar_rectified_right
+        The rectified right images with epipolar lines
