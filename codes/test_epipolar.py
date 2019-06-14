@@ -1,7 +1,7 @@
 import os
 import numpy as np
-from single_camera_system import single_camera_system
-from stereo_camera_system import stereo_camera_system
+from Camera import Camera
+from StereoCamera import StereoCamera
 import cv2
 import matplotlib.pyplot as plt
 
@@ -21,7 +21,7 @@ def drawlines(image, lines, points, colors):
 
 def draw_epipolar_lines(origin_stereo_camera, rectified_stereo_camera):
 
-    for i in range(1, 14):
+    for i in range(1, 3):
         imgL = cv2.imread(os.path.join('../images/left', 'left' + str(i).zfill(2) + '.jpg'))
         imgR = cv2.imread(os.path.join('../images/right', 'right' + str(i).zfill(2) + '.jpg'))
         rectified_imgL = cv2.imread(os.path.join('../images/rectified_left', 'rectified_left' + str(i).zfill(2) + '.jpg'))
@@ -68,44 +68,44 @@ def draw_epipolar_lines(origin_stereo_camera, rectified_stereo_camera):
         )
 
 
-        # plt.subplot(2,2,1)
-        # plt.imshow(epipolar_imgL)
-        # plt.title(i)
-        # plt.subplot(2, 2, 2)
-        # plt.imshow(epipolar_imgR)
-        # plt.subplot(2, 2, 3)
-        # plt.imshow(epipolar_rectified_imgL)
-        # plt.title(i)
-        # plt.subplot(2, 2, 4)
-        # plt.imshow(epipolar_rectified_imgR)
-        # plt.show()
+        plt.subplot(2,2,1)
+        plt.imshow(epipolar_imgL)
+        plt.title(i)
+        plt.subplot(2, 2, 2)
+        plt.imshow(epipolar_imgR)
+        plt.subplot(2, 2, 3)
+        plt.imshow(epipolar_rectified_imgL)
+        plt.title(i)
+        plt.subplot(2, 2, 4)
+        plt.imshow(epipolar_rectified_imgR)
+        plt.show()
 
-        cv2.imwrite(
-            os.path.join('../images/epipolar_left/', 'epipolar_left' + str(i).zfill(2) + '.jpg'),
-            epipolar_imgL)
-
-        cv2.imwrite(
-            os.path.join('../images/epipolar_right/', 'epipolar_right' + str(i).zfill(2) + '.jpg'),
-            epipolar_imgR)
-
-        cv2.imwrite(
-            os.path.join('../images/epipolar_rectified_left/', 'epipolar_rectified_left' + str(i).zfill(2) + '.jpg' ),
-                    epipolar_rectified_imgL)
-
-        cv2.imwrite(
-            os.path.join('../images/epipolar_rectified_right/', 'epipolar_rectified_right' + str(i).zfill(2) + '.jpg'),
-            epipolar_rectified_imgR)
+        # cv2.imwrite(
+        #     os.path.join('../images/epipolar_left/', 'epipolar_left' + str(i).zfill(2) + '.jpg'),
+        #     epipolar_imgL)
+        #
+        # cv2.imwrite(
+        #     os.path.join('../images/epipolar_right/', 'epipolar_right' + str(i).zfill(2) + '.jpg'),
+        #     epipolar_imgR)
+        #
+        # cv2.imwrite(
+        #     os.path.join('../images/epipolar_rectified_left/', 'epipolar_rectified_left' + str(i).zfill(2) + '.jpg' ),
+        #             epipolar_rectified_imgL)
+        #
+        # cv2.imwrite(
+        #     os.path.join('../images/epipolar_rectified_right/', 'epipolar_rectified_right' + str(i).zfill(2) + '.jpg'),
+        #     epipolar_rectified_imgR)
 
 if __name__ == '__main__':
     # create a stereo camera system
-    origin_stereo_camera = stereo_camera_system(
-        left_camera=single_camera_system(image_root_dir='../images/left'),
-        right_camera=single_camera_system(image_root_dir='../images/right'),
+    origin_stereo_camera = StereoCamera(
+        left_camera=Camera(image_root_dir='../images/left'),
+        right_camera=Camera(image_root_dir='../images/right'),
     )
 
-    rectified_stereo_camera = stereo_camera_system(
-        left_camera=single_camera_system(image_root_dir='../images/rectified_left'),
-        right_camera=single_camera_system(image_root_dir='../images/rectified_right'),
+    rectified_stereo_camera = StereoCamera(
+        left_camera=Camera(image_root_dir='../images/rectified_left'),
+        right_camera=Camera(image_root_dir='../images/rectified_right'),
     )
 
     # stereo calibrate
