@@ -1,4 +1,4 @@
-The reporsity is the implement code of the Stereo Project. 
+The repository is the implement code of the Stereo Project. 
 
 [Here](https://cn.overleaf.com/read/qhzdxpsksbcs) is the report of the project, which is written in latex in online overleaf.
 
