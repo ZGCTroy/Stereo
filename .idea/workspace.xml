@@ -46,22 +46,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="300">
-                <caret line="20" column="84" lean-forward="true" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.travis.yml">
+        <entry file="file://$PROJECT_DIR$/codes/test_calibrate.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="45">
+              <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -125,6 +113,7 @@
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/test_summer_python.py" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/codes/test_calibrate.py" />
       </list>
     </option>
   </component>
@@ -213,7 +202,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.epipolar">
+  <component name="RunManager" selected="Python.test_calibrate">
     <configuration name="summer_python" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="summer_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -355,20 +344,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="stereoCalibrate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test_calibrate" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="summer_python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/codes" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/test_stereoCalibrate.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/codes/test_calibrate.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -383,16 +369,16 @@
       <item itemvalue="Python.Rectify" />
       <item itemvalue="Python.OpenCV_SGBM" />
       <item itemvalue="Python.Undistort" />
-      <item itemvalue="Python.stereoCalibrate" />
       <item itemvalue="Python.epipolar" />
+      <item itemvalue="Python.test_calibrate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test_calibrate" />
         <item itemvalue="Python.epipolar" />
         <item itemvalue="Python.Rectify" />
         <item itemvalue="Python.Undistort" />
         <item itemvalue="Python.OpenCV_SGBM" />
-        <item itemvalue="Python.stereoCalibrate" />
       </list>
     </recent_temporary>
   </component>
@@ -413,12 +399,12 @@
       <workItem from="1559455951093" duration="8543000" />
       <workItem from="1559529000494" duration="25682000" />
       <workItem from="1560162522205" duration="46779000" />
-      <workItem from="1560473454008" duration="3824000" />
+      <workItem from="1560473454008" duration="4236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105993000" />
+    <option name="totallyTimeSpent" value="106405000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -430,10 +416,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.104447976" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10989011" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -448,13 +433,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007943" side_tool="true" weight="0.27445257" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.22040816" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.23503649" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.32857144" />
       <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="13" sideWeight="0.49960285" weight="0.329927" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" x="865" y="195" width="830" height="1050" id="SciView" order="3" sideWeight="0.97423667" visible="true" weight="0.11199365" />
-      <window_info anchor="right" x="0" y="0" width="590" height="1240" id="Documentation" order="4" sideWeight="0.025763359" side_tool="true" visible="true" weight="0.11199365" />
+      <window_info anchor="right" x="865" y="195" width="830" height="1050" id="SciView" order="3" sideWeight="0.95896655" visible="true" weight="0.17216118" />
+      <window_info anchor="right" x="0" y="0" width="590" height="1240" id="Documentation" order="4" sideWeight="0.041033436" side_tool="true" visible="true" weight="0.17216118" />
       <window_info anchor="right" id="Database" order="5" sideWeight="0.49809524" weight="0.32962668" />
       <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
     </layout>
@@ -642,16 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes/test_calibrate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="146" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="146" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codes/test_stereoCalibrate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -684,19 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/codes/StereoCamera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#831#1628#0" />
-            <element signature="e#1669#2705#0" />
-            <element signature="e#2761#3061#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -711,6 +673,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="255">
+            <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -718,13 +690,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" column="84" lean-forward="true" selection-start-line="20" selection-start-column="84" selection-end-line="20" selection-end-column="84" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/codes/StereoCamera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#831#1628#0" />
+            <element signature="e#1669#2705#0" />
+            <element signature="e#2761#3061#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/codes/test_calibrate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
         </state>
       </provider>
     </entry>

@@ -1,7 +1,7 @@
 import os
 import numpy as np
-from camera import Camera
-from stereo_camera_system import stereo_camera_system
+from Camera import Camera
+from StereoCamera import StereoCamera
 import cv2
 import matplotlib.pyplot as plt
 
