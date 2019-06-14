@@ -18,4 +18,4 @@ The reporsity is the implement code of the Stereo Project.
     
 * env
 
-    the python Virtualenv, which can be loaded by IDE such as Pycharm, Eclipse
+    the python Virtualenv, which can be loaded by most IDEs such as Pycharm, Eclipse
